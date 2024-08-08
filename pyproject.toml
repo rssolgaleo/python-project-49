@@ -4,10 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["Ruslan Sanigullin <hirudorar07@gmail.com>"]
 readme = "README.md"
+packages = [
+  { include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
 
 [build-system]
 requires = ["poetry-core"]
