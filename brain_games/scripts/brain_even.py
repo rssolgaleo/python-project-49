@@ -27,5 +27,6 @@ def main():
     if score == 3:
         print(f"Congratulations, {name}!")
 
+
 if __name__ == "__main__":
     main()
