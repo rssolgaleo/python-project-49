@@ -3,6 +3,7 @@
 from brain_games.cli import welcome_user
 import random
 
+
 def main():
     name = welcome_user()
     operations = ['+', '-', '*']
@@ -25,6 +26,7 @@ def main():
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
+
 
 if __name__ == '__main__':
     main()
