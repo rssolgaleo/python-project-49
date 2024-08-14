@@ -23,7 +23,6 @@ def main():
         print(f'Question: {a} {b}')
         correct = gcd(a, b)
         answer = int(input('Your answer: '))
-        print(answer)
         if answer == correct:
             score += 1
             print("Correct!")
