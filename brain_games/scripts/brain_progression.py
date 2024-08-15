@@ -6,7 +6,7 @@ from brain_games.cli import welcome_user
 
 def generate_progression():
     start = random.randint(1, 10)
-    step = random.randint(1, 5)
+    step = random.randint(1, 7)
     progression = [start + i * step for i in range(10)]
     return progression
 
@@ -21,16 +21,16 @@ def main():
     print('What number is missing in the progression?')
     score = 0
     while (score < 3):
-        length = random.randint(5, 10)
-        progression = generate_progression(length)
+        progression = generate_progression()
         progression, hidden_number = hide_number(progression)
-        print(f"Question: {progression}")
+        print(hidden_number)
+        print("Question:", *progression)
         answer = int(input("Your answer: "))
         if answer == hidden_number:
             print("Correct!")
             score += 1
         else:
-            print(f"'{answer} was wrong answer ;(. Correct answer is '{hidden_number}'")
+            print(f"'{answer}' was wrong answer ;(. Correct answer is '{hidden_number}'")
             print(f"Let's try again, {name}")
             break
     if score == 3:
