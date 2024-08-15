@@ -23,7 +23,6 @@ def main():
     while (score < 3):
         progression = generate_progression()
         progression, hidden_number = hide_number(progression)
-        print(hidden_number)
         print("Question:", *progression)
         answer = int(input("Your answer: "))
         if answer == hidden_number:
