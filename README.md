@@ -4,12 +4,31 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/093e290cc899e1f728c1/maintainability)](https://codeclimate.com/github/rssolgaleo/python-project-49/maintainability)
 
-[brain-even](https://asciinema.org/a/671608)
+# Brain Games
 
-[brain-calc](https://asciinema.org/a/3XRHqHrSkUXeBO0PJOXAK1DK4)
+_Brain Games_ is a fun and exciting game aimed at developing cognitive skills. This project contains several games that develop logic, attention, and memory. Welcome!
 
-[brain-gcd](https://asciinema.org/a/jMj3L6UxxC6QOPFm0glkDOPvJ)
+# Requirement
+* Python 3.9
+* Poetry
 
-[brain-progression](https://asciinema.org/a/mBKCkLvnBVOOZ0B2tLLmyciox)
+# Installation 
+```
+git clone https://github.com/rssolgaleo/python-project-49.git
+```
+```
+package-install
+```
+```
+brain-games
+```
+# Demonstration
+* [brain-even](https://asciinema.org/a/671608)
 
-[brain-prime](https://asciinema.org/a/twk9pFXCASOabL918iLOAkGAM)
+* [brain-calc](https://asciinema.org/a/3XRHqHrSkUXeBO0PJOXAK1DK4)
+
+* [brain-gcd](https://asciinema.org/a/jMj3L6UxxC6QOPFm0glkDOPvJ)
+
+* [brain-progression](https://asciinema.org/a/mBKCkLvnBVOOZ0B2tLLmyciox)
+
+* [brain-prime](https://asciinema.org/a/twk9pFXCASOabL918iLOAkGAM)
