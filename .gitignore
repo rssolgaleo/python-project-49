@@ -1,9 +1,9 @@
 work-venv
 .venv
 brain_games/for_mistake.py
-brain_calc.cast
-brain_gcd.cast
-brain_prime.cast
-brain_progression.cast
+video/brain_calc.cast
+video/brain_gcd.cast
+video/brain_prime.cast
+video/brain_progression.cast
 brain_games.cast
-demo.cast
+video/demo.cast
