@@ -32,7 +32,7 @@ def main():
             score += 1
         else:
             print(f"'{answ}' was wrong answer ;(. Correct answer is '{hidden}'")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
     if score == 3:
         print(f"Congratulations, {name}!")
