@@ -26,12 +26,12 @@ def main():
         progression = generate_progression()
         progression, hidden = hide_number(progression)
         print("Question:", *progression)
-        answ = int(input("Your answer: "))
-        if answ == hidden:
+        ans = int(input("Your answer: "))
+        if ans == hidden:
             print("Correct!")
             score += 1
         else:
-            print(f"'{answ}' was wrong answer ;(. Correct answer is '{hidden}.'")
+            print(f"'{ans}' was wrong answer ;(. Correct answer is '{hidden}.'")
             print(f"Let's try again, {name}!")
             break
     if score == 3:
