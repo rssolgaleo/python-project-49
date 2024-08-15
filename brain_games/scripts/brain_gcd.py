@@ -21,13 +21,13 @@ def main():
         a = random.randint(0, 50)
         b = random.randint(0, 50)
         print(f'Question: {a} {b}')
-        correct = gcd(a, b)
-        answer = int(input('Your answer: '))
-        if answer == correct:
+        right = gcd(a, b)
+        answ = int(input('Your answer: '))
+        if answ == right:
             score += 1
             print("Correct!")
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'")
+            print(f"'{answ}' is wrong answer ;(. Correct answer was '{right}'")
             print(f"Let's try again, {name}")
             break
     if score == 3:

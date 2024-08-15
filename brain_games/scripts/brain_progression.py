@@ -24,14 +24,14 @@ def main():
     score = 0
     while (score < 3):
         progression = generate_progression()
-        progression, hidden_number = hide_number(progression)
+        progression, hidden = hide_number(progression)
         print("Question:", *progression)
-        answer = int(input("Your answer: "))
-        if answer == hidden_number:
+        answ = int(input("Your answer: "))
+        if answ == hidden:
             print("Correct!")
             score += 1
         else:
-            print(f"'{answer}' was wrong answer ;(. Correct answer is '{hidden_number}'")
+            print(f"'{answ}' was wrong answer ;(. Correct answer is '{hidden}'")
             print(f"Let's try again, {name}")
             break
     if score == 3:
