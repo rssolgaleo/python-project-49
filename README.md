@@ -12,13 +12,16 @@ _Brain Games_ is a fun and exciting game aimed at developing cognitive skills. T
 * Python 3.9
 * Poetry
 
-# Installation 
+# Installation && Instruction
+1. _Clone the repository:_
 ```
 git clone https://github.com/rssolgaleo/python-project-49.git
 ```
+2. _Write down the line_
 ```
 package-install
 ```
+3. _Start the game_
 ```
 brain-games
 ```
