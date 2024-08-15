@@ -18,7 +18,7 @@ def main():
     while (score < 3):
         number = random.randint(1, 50)
         print(f"Question: {number}")
-        a = input('Your answer: ')
+        a = str(input('Your answer: '))
         correct = 'yes' if is_prime(number) else 'no'
         if a == correct:
             print("Correct!")
