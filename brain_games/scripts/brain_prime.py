@@ -16,7 +16,7 @@ def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     score = 0
     while (score < 3):
-        number = random.randint(1, 50)
+        number = random.randint(2, 50)
         print(f"Question: {number}")
         a = str(input('Your answer: '))
         correct = 'yes' if is_prime(number) else 'no'
