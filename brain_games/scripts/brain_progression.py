@@ -10,11 +10,13 @@ def generate_progression():
     progression = [start + i * step for i in range(10)]
     return progression
 
+
 def hide_number(progression):
     index = random.randint(0, len(progression) - 1)
     hidden_number = progression[index]
     progression[index] = '..'
     return progression, hidden_number
+
 
 def main():
     name = welcome_user()
