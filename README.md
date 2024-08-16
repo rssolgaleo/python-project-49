@@ -5,22 +5,33 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/093e290cc899e1f728c1/maintainability)](https://codeclimate.com/github/rssolgaleo/python-project-49/maintainability)
 
 # Brain Games <img src="/photos/photo.png" width="35">
+<<<<<<< HEAD
 _Brain Games_ is a fun and exciting game aimed at developing cognitive skills. This project contains several games that develop logic, attention, and memory. Welcome!
+=======
+__Brain Games__ is a fun and exciting game aimed at developing cognitive skills.
+
+This project contains several games that develop logic, attention, and memory. 
+
+Welcome!
 
 # Requirement
-* Python 3.9
+* Python 3.9 or later
 * Poetry
 
 # Installation && Instruction
-1. _Clone the repository:_
+1. __Clone the repository:__
 ```
 git clone https://github.com/rssolgaleo/python-project-49.git
 ```
-2. _Write down the line_
+2. __Write down the line__
 ```
-package-install
+python3 -m venv <name>
 ```
-3. _Start the game_
+3. Install
+```
+pacakge-install
+```
+4. __Start the game__
 ```
 brain-games
 ```
