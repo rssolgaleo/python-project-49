@@ -25,11 +25,11 @@ git clone https://github.com/rssolgaleo/python-project-49.git
 ```
 python3 -m venv <name>
 ```
-3. Write down the line
+3. __Write down the line__
 ```
 source <name>/bin/activate
 ```
-4. Install
+4. __Install__
 ```
 pacakge-install
 ```
