@@ -25,11 +25,15 @@ git clone https://github.com/rssolgaleo/python-project-49.git
 ```
 python3 -m venv <name>
 ```
-3. Install
+3. Write down the line
+```
+source <name>/bin/activate
+```
+4. Install
 ```
 pacakge-install
 ```
-4. __Start the game__
+5. __Start the game__
 ```
 brain-games
 ```
