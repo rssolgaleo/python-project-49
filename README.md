@@ -5,9 +5,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/093e290cc899e1f728c1/maintainability)](https://codeclimate.com/github/rssolgaleo/python-project-49/maintainability)
 
 # Brain Games <img src="/photos/photo.png" width="35">
-<<<<<<< HEAD
-_Brain Games_ is a fun and exciting game aimed at developing cognitive skills. This project contains several games that develop logic, attention, and memory. Welcome!
-=======
+
 __Brain Games__ is a fun and exciting game aimed at developing cognitive skills.
 
 This project contains several games that develop logic, attention, and memory. 
