@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from brain_games.cli import hi, user_answer, check, number_count, end, bye
+from brain_games.cli import hi, user_answer, check, number_count, end
 
 
 def is_even(n):
@@ -25,7 +25,6 @@ def main():
             if end(name, correct_count):
                 break
         else:
-            bye(name, answer, correct)
             break
 
 
