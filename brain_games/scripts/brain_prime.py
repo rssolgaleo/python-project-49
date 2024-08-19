@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from brain_games.cli import welcome_user
+from brain_games.cli import hi, user_answer, check, number_count, end
 
 
 def is_prime(n):
@@ -12,23 +12,22 @@ def is_prime(n):
 
 
 def main():
-    name = welcome_user()
+    name = hi()
+    count = number_count()
+    correct_count = 0
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    score = 0
-    while (score < 3):
+    for _ in range(count):
         number = random.randint(2, 50)
         print(f"Question: {number}")
-        a = str(input('Your answer: '))
+
+        answer = str(user_answer())
         correct = 'yes' if is_prime(number) else 'no'
-        if a == correct:
-            print("Correct!")
-            score += 1
+        if check(name, answer, correct):
+            correct_count += 1
+            if end(name, correct_count):
+                break
         else:
-            print(f"'{a}' is wrong answer ;(. Correct answer was '{correct}'.")
-            print(f"Let's try again, {name}!")
             break
-    if score == 3:
-        print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
