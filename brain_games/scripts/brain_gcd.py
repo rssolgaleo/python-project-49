@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from brain_games.cli import welcome_user
+from brain_games.cli import hi, user_answer, check, number_count, end
 
 
 def gcd(a, b):
@@ -14,24 +14,22 @@ def gcd(a, b):
 
 
 def main():
-    name = welcome_user()
+    name = hi()
+    count = number_count()
+    correct_count = 0
     print('Find the greatest common divisor of given numbers.')
-    score = 0
-    while (score < 3):
+    for _ in range(count):
         a = random.randint(0, 50)
         b = random.randint(0, 50)
-        print(f'Question: {a} {b}')
-        right = gcd(a, b)
-        answ = int(input('Your answer: '))
-        if answ == right:
-            score += 1
-            print("Correct!")
+        print(f"Question: {a} {b}")
+        answer = int(user_answer())
+        correct = gcd(a, b)
+        if check(name, answer, correct):
+            correct_count += 1
+            if end(name, correct_count):
+                break
         else:
-            print(f"'{answ}' is wrong answer ;(. Correct answer was '{right}'.")
-            print(f"Let's try again, {name}!")
             break
-    if score == 3:
-        print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
