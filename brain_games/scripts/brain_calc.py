@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.cli import hi, user_answer, check, number_count, end, bye
+from brain_games.cli import hi, user_answer, check, number_count, end
 import random
 
 
@@ -31,7 +31,6 @@ def main():
             if end(name, correct_count):
                 break
         else:
-            bye(name, answer, correct)
             break
 
 
