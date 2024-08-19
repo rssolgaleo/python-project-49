@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from brain_games.cli import welcome_user
+from brain_games.cli import hi, user_answer, check, number_count, end
 
 
 def generate_progression():
@@ -19,23 +19,21 @@ def hide_number(progression):
 
 
 def main():
-    name = welcome_user()
+    name = hi()
+    count = number_count()
+    correct_count = 0
     print('What number is missing in the progression?')
-    score = 0
-    while (score < 3):
+    for _ in range(count):
         progression = generate_progression()
         progression, hidden = hide_number(progression)
         print("Question:", *progression)
-        ans = int(input("Your answer: "))
-        if ans == hidden:
-            print("Correct!")
-            score += 1
+        answer = int(user_answer())
+        if check(name, answer, hidden):
+            correct_count += 1
+            if end(name, correct_count):
+                break
         else:
-            print(f"'{ans}' was wrong answer ;(. Correct answer is '{hidden}.'")
-            print(f"Let's try again, {name}!")
             break
-    if score == 3:
-        print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
