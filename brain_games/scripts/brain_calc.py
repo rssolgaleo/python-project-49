@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 
-from brain_games.cli import hi, user_answer, check, number_count, end, bye, calc
+from brain_games.cli import hi, user_answer, check, number_count, end, bye
 import random
+
+
+def calc(a, b, operation):
+    if operation == '+':
+        return a + b
+    elif operation == '-':
+        return a - b
+    elif operation == '*':
+        return a * b
 
 
 def main():

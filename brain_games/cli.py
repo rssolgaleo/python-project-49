@@ -36,12 +36,3 @@ def end(name, count):
         print(f"Congratulations, {name}!")
         return True
     return False
-
-
-def calc(a, b, operation):
-    if operation == '+':
-        return a + b
-    elif operation == '-':
-        return a - b
-    elif operation == '*':
-        return a * b
