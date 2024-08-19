@@ -1,31 +1,29 @@
 #!/usr/bin/env python3
 
-from brain_games.cli import welcome_user
+from brain_games.cli import hi, user_answer, check, number_count, end, bye, calc
 import random
 
 
 def main():
-    name = welcome_user()
+    name = hi()
+    count = number_count()
+    correct_count = 0
     operations = ['+', '-', '*']
     print('What is the result of the expression?')
-    for operation in operations:
+    for _ in range(count):
         a = random.randint(1, 100)
         b = random.randint(1, 100)
-        if operation == '+':
-            right = a + b
-        elif operation == '-':
-            right = a - b
-        elif operation == '*':
-            right = a * b
+        operation = random.choice(operations)
+        correct = calc(a, b, operation)
         print(f'Question: {a} {operation} {b}')
-        answ = int(input('Your answer: '))
-        if answ == right:
-            print('Correct!')
+        answer = int(user_answer())
+        if check(name, answer, correct):
+            correct_count += 1
+            if end(name, correct_count):
+                break
         else:
-            print(f"'{answ}' is wrong answer ;(. Correct answer was '{right}'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f"Congratulations, {name}!")
+            bye(name, answer, correct)
+            break
 
 
 if __name__ == '__main__':
