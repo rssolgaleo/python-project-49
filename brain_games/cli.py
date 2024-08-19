@@ -9,7 +9,7 @@ def hi():
 
 
 def number_count():
-    return 5
+    return 3
 
 
 def user_answer():
