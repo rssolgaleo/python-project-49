@@ -9,7 +9,7 @@ def hi():
 
 
 def number_count():
-    return 3
+    return 5
 
 
 def user_answer():
@@ -32,7 +32,7 @@ def bye(name, answ, right):
 
 
 def end(name, count):
-    if count == 3:
+    if count == number_count():
         print(f"Congratulations, {name}!")
         return True
     return False
