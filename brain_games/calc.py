@@ -1,18 +1,24 @@
 import random
-from brain_games.cli import hi, number_count, check, win, lose, input
+from brain_games.cli import hi, number_count, check, win, lose, reply
+
+
+def text():
+    print('What is the result of the expression?')
+    return
+
 
 def calculator(a, b):
     operations = ['+', '-', '*']
     operation = random.choice(operations)
     if operation == '+':
         print(f'Question: {a} + {b}')
-        return a + b
+        return str(a + b)
     if operation == '-':
         print(f'Question: {a} - {b}')
-        return a - b
+        return str(a - b)
     if operation == '*':
         print(f'Question: {a} * {b}')
-        return a * b
+        return str(a * b)
 
 
 def function():
@@ -26,15 +32,17 @@ def progress_game():
     cycle = number_count()
     count = 0
 
-    print('What is the result of the expression?')
+    text()
 
     for _ in range(cycle):
         a, b = function()
         answer = calculator(a, b)
-        user_answer = int(input())
+        user_answer = reply()
         if check(user_answer, answer):
+            count += 1
             if count == cycle:
                 win(name)
                 return
         else:
             lose(name, user_answer, answer)
+            return

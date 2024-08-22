@@ -12,13 +12,14 @@ def number_count():
     return 3
 
 
-def input():
+def reply():
     answer = input("Your answer: ")
     return answer
 
 
 def check(answer, right):
     if answer == right:
+        print('Correct!')
         return True
     return False
 
