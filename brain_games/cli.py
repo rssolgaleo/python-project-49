@@ -12,27 +12,23 @@ def number_count():
     return 3
 
 
-def user_answer():
+def input():
     answer = input("Your answer: ")
     return answer
 
 
-def check(name, answer, right):
+def check(answer, right):
     if answer == right:
-        print("Correct!")
         return True
-    else:
-        bye(name, answer, right)
+    return False
 
 
-def bye(name, answ, right):
+def win(name):
+    print(f'Congratulations, {name}!')
+    return
+
+
+def lose(name, answ, right):
     print(f"'{answ}' is wrong answer ;(. Correct answer was '{right}'.")
     print(f"Let's try again, {name}!")
-    return False
-
-
-def end(name, count):
-    if count == number_count():
-        print(f"Congratulations, {name}!")
-        return True
-    return False
+    return
