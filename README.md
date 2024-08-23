@@ -21,19 +21,11 @@ Welcome!
 ```
 git clone https://github.com/rssolgaleo/python-project-49.git
 ```
-2. __Write down the line__
-```
-python3 -m venv <name>
-```
-3. __Write down the line__
-```
-source <name>/bin/activate
-```
-4. __Install__
+2. __Install__
 ```
 pacakge-install
 ```
-5. __Start the game__
+3. __Start the game__
 ```
 brain-games
 ```
