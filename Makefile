@@ -1,6 +1,7 @@
 .PHONY: install
 
 install:
+	poetry lock
 	poetry install
 
 brain-games:
