@@ -9,7 +9,7 @@ def text():
 
 def generate_progression():
     start = random.randint(1, 10)
-    step = random.randint(1, 7)
+    step = random.randint(2, 7)
     progression = [start + i * step for i in range(10)]
     return progression
 
@@ -18,7 +18,7 @@ def hide_number(progression):
     index = random.randint(0, len(progression) - 1)
     hidden_number = progression[index]
     progression[index] = '..'
-    print("Question: ", *progression)
+    print(f"Question: {' '.join(map(str, progression))}")
     return int(hidden_number)
 
 
