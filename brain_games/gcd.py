@@ -2,11 +2,6 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def text():
-    print('Find the greatest common divisor of given numbers.')
-    return
-
-
 def gcd(a, b):
     print(f'Question: {a} {b}')
     while a != 0 and b != 0:
@@ -28,7 +23,7 @@ def progress_game():
     cycle = number_count()
     count = 0
 
-    text()
+    print('Find the greatest common divisor of given numbers.')
 
     for _ in range(cycle):
         a, b = function()

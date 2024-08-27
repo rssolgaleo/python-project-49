@@ -2,11 +2,6 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def text():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    return
-
-
 def is_even(a):
     print(f'Question: {a}')
     return 'yes' if a % 2 == 0 else 'no'
@@ -22,7 +17,7 @@ def progress_game():
     cycle = number_count()
     count = 0
 
-    text()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(cycle):
         a = function()

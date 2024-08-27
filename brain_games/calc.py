@@ -2,11 +2,6 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def text():
-    print('What is the result of the expression?')
-    return
-
-
 def calculator(a, b):
     operations = ['+', '-', '*']
     operation = random.choice(operations)
@@ -32,7 +27,7 @@ def progress_game():
     cycle = number_count()
     count = 0
 
-    text()
+    print('What is the result of the expression?')
 
     for _ in range(cycle):
         a, b = function()

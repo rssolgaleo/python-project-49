@@ -2,11 +2,6 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def text():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    return
-
-
 def is_prime(a):
     print(f"Question: {a}")
     for i in range(2, a // 2 + 1):
@@ -25,7 +20,7 @@ def progress_game():
     cycle = number_count()
     count = 0
 
-    text()
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for _ in range(cycle):
         a = function()
