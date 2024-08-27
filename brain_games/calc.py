@@ -2,7 +2,9 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def calculator(a, b):
+def calculator():
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
     operations = ['+', '-', '*']
     operation = random.choice(operations)
     if operation == '+':
@@ -16,12 +18,6 @@ def calculator(a, b):
         return str(a * b)
 
 
-def function():
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
-    return a, b
-
-
 def progress_game():
     name = hi()
     cycle = number_count()
@@ -30,8 +26,7 @@ def progress_game():
     print('What is the result of the expression?')
 
     for _ in range(cycle):
-        a, b = function()
-        answer = calculator(a, b)
+        answer = calculator()
         user_answer = reply()
         if check(user_answer, answer):
             count += 1

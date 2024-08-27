@@ -3,13 +3,9 @@ from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
 def is_even(a):
+    a = random.randint(1, 100)
     print(f'Question: {a}')
     return 'yes' if a % 2 == 0 else 'no'
-
-
-def function():
-    a = random.randint(1, 100)
-    return a
 
 
 def progress_game():
@@ -20,8 +16,7 @@ def progress_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(cycle):
-        a = function()
-        answer = is_even(a)
+        answer = is_even()
         user_answer = reply()
         if check(user_answer, answer):
             count += 1

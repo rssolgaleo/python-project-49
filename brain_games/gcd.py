@@ -2,7 +2,9 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def gcd(a, b):
+def gcd():
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
     print(f'Question: {a} {b}')
     while a != 0 and b != 0:
         if (a > b):
@@ -10,12 +12,6 @@ def gcd(a, b):
         else:
             b = b % a
     return str(a + b)
-
-
-def function():
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
-    return a, b
 
 
 def progress_game():
@@ -26,8 +22,7 @@ def progress_game():
     print('Find the greatest common divisor of given numbers.')
 
     for _ in range(cycle):
-        a, b = function()
-        answer = gcd(a, b)
+        answer = gcd()
         user_answer = reply()
         if check(user_answer, answer):
             count += 1
