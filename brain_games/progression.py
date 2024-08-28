@@ -2,24 +2,16 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def text():
-    print('What number is missing in the progression?')
-    return
-
-
-def generate_progression():
+def hide_number() -> int:
     start = random.randint(1, 10)
-    step = random.randint(2, 7)
+    step = random.randint(1, 7)
     progression = [start + i * step for i in range(10)]
-    return progression
 
-
-def hide_number(progression):
-    index = random.randint(0, len(progression) - 1)
+    index = random.randint(1, len(progression) - 1)
     hidden_number = progression[index]
     progression[index] = '..'
     print(f"Question: {' '.join(map(str, progression))}")
-    return int(hidden_number)
+    return hidden_number
 
 
 def progress_game():
@@ -30,8 +22,7 @@ def progress_game():
     print('What number is missing in the progression?')
 
     for _ in range(cycle):
-        progression = generate_progression()
-        answer = hide_number(progression)
+        answer = hide_number()
         user_answer = int(reply())
         if check(user_answer, answer):
             count += 1
