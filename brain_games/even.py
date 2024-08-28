@@ -2,7 +2,7 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def is_even(a):
+def is_even():
     a = random.randint(1, 100)
     print(f'Question: {a}')
     return 'yes' if a % 2 == 0 else 'no'
