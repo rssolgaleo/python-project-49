@@ -14,7 +14,7 @@ def hide_number() -> str:
     return hidden_number
 
 
-def progression_game():
+def progress_game():
     name = hi()
     cycle = number_count()
     count = 0
