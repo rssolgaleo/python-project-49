@@ -16,19 +16,6 @@ Welcome!
 * Python 3.9 or later
 * Poetry
 
-# Installation && Instruction
-1. __Clone the repository:__
-```
-git clone https://github.com/rssolgaleo/python-project-49.git
-```
-2. __Install__
-```
-pacakge-install
-```
-3. __Start the game__
-```
-brain-games
-```
 # Demonstration
 * [brain-even](https://asciinema.org/a/671608)
 
