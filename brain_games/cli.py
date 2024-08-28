@@ -12,7 +12,7 @@ def number_count():
     return 3
 
 
-def reply():
+def reply() -> str:
     answer = input("Your answer: ")
     return answer
 

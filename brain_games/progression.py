@@ -2,7 +2,7 @@ import random
 from brain_games.cli import hi, number_count, check, win, lose, reply
 
 
-def hide_number() -> int:
+def hide_number() -> str:
     start = random.randint(1, 10)
     step = random.randint(1, 7)
     progression = [start + i * step for i in range(10)]
@@ -14,7 +14,7 @@ def hide_number() -> int:
     return hidden_number
 
 
-def progress_game():
+def progression_game():
     name = hi()
     cycle = number_count()
     count = 0
@@ -23,7 +23,7 @@ def progress_game():
 
     for _ in range(cycle):
         answer = hide_number()
-        user_answer = int(reply())
+        user_answer = reply()
         if check(user_answer, answer):
             count += 1
             if count == cycle:
