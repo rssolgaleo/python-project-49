@@ -47,6 +47,7 @@ def progress_game(game_mode):
         answer = games(game_mode)
 
         user_answer = str(reply())
+
         if answer == user_answer:
             count += 1
             correct()
