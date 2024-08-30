@@ -8,20 +8,14 @@ def hi():
     return name
 
 
-def number_count():
-    return 3
-
-
 def reply() -> str:
     answer = input("Your answer: ")
     return answer
 
 
-def check(answer, right):
-    if answer == right:
-        print('Correct!')
-        return True
-    return False
+def correct():
+    print('Correct!')
+    return
 
 
 def win(name):

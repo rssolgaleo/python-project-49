@@ -1,4 +1,4 @@
-from brain_games.cli import hi, number_count, check, win, lose, reply
+from brain_games.cli import hi, win, lose, reply, correct
 from brain_games.calc import calculator
 from brain_games.prime import is_prime
 from brain_games.gcd import gcd
@@ -36,7 +36,7 @@ def find(game_mode):
 
 def progress_game(game_mode):
     name = hi()
-    cycle = number_count()
+    cycle = 3
     count = 0
 
     text = find(game_mode)
@@ -47,8 +47,9 @@ def progress_game(game_mode):
         answer = games(game_mode)
 
         user_answer = str(reply())
-        if check(user_answer, answer):
+        if answer == user_answer:
             count += 1
+            correct()
             if count == cycle:
                 win(name)
                 return
