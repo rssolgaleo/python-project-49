@@ -1,11 +1,11 @@
 import random
 
 
-def calculator():
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
+def calculator() -> str:
+    a: int = random.randint(1, 100)
+    b: int = random.randint(1, 100)
     operations = ['+', '-', '*']
-    operation = random.choice(operations)
+    operation: str = random.choice(operations)
     if operation == '+':
         print(f'Question: {a} + {b}')
         return str(a + b)

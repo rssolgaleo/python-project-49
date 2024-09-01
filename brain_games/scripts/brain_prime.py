@@ -5,7 +5,7 @@ from brain_games.prime import is_prime
 
 
 def main():
-    text = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    text: str = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     progress_game(is_prime, text)
 
 

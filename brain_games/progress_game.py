@@ -3,12 +3,11 @@ from brain_games.cli import hi, win, lose, reply, correct
 
 def progress_game(func, text):
     name = hi()
-    cycle = 3
     count = 0
 
     print(text)
 
-    for _ in range(cycle):
+    for _ in range(3):
 
         answer = func()
 
