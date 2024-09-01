@@ -10,4 +10,4 @@ def hide_number() -> str:
     hidden_number = progression[index]
     progression[index] = '..'
     print(f"Question: {' '.join(map(str, progression))}")
-    return hidden_number
+    return str(hidden_number)
