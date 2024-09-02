@@ -1,7 +1,7 @@
 from brain_games.cli import hi, win, lose, reply, correct
 
 
-def progress_game(func, text):
+def progress_game(func, text) -> None:
     name = hi()
     cycle = 3
     count = 0

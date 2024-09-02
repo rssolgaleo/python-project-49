@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-from brain_games.progress_game import progress_game
-from brain_games.prime import is_prime
+from brain_games.prime import play
+
 
 
 def main():
-    text: str = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    progress_game(is_prime, text)
+    print('1')
+    play()
 
 
 if __name__ == "__main__":

@@ -1,4 +1,6 @@
 import random
+from brain_games.progress_game import progress_game
+from brain_games.constants import constant
 
 
 def is_prime() -> str:
@@ -8,3 +10,7 @@ def is_prime() -> str:
         if a % i == 0:
             return 'no'
     return 'yes'
+
+
+def play():
+    progress_game(is_prime, constant(is_prime))
