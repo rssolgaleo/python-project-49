@@ -1,4 +1,5 @@
 import random
+from brain_games.progress_game import progress_game
 
 
 def hide_number() -> str:
@@ -11,3 +12,8 @@ def hide_number() -> str:
     progression[index] = '..'
     print(f"Question: {' '.join(map(str, progression))}")
     return str(hidden_number)
+
+
+def play():
+    text = 'What number is missing in the progression?'
+    progress_game(hide_number, text)

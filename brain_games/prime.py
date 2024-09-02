@@ -1,6 +1,5 @@
 import random
 from brain_games.progress_game import progress_game
-from brain_games.constants import constant
 
 
 def is_prime() -> str:
@@ -13,4 +12,5 @@ def is_prime() -> str:
 
 
 def play():
-    progress_game(is_prime, constant(is_prime))
+    text = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    progress_game(is_prime, text)

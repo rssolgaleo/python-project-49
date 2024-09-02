@@ -3,9 +3,7 @@
 from brain_games.prime import play
 
 
-
 def main():
-    print('1')
     play()
 
 

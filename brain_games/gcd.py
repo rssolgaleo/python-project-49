@@ -1,4 +1,5 @@
 import random
+from brain_games.progress_game import progress_game
 
 
 def text():
@@ -16,3 +17,8 @@ def gcd() -> str:
         else:
             b = b % a
     return str(a + b)
+
+
+def play():
+    text = 'Find the greatest common divisor of given numbers.'
+    progress_game(gcd, text)
