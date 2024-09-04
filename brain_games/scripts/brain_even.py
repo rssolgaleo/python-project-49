@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
-from brain_games.progress_game import progress_game
-from brain_games.even import is_even
+from brain_games.even import play
 
 
 def main():
-    text: str = 'Answer "yes" if the number is even, otherwise answer "no".'
-    progress_game(is_even, text)
+    play()
 
 
 if __name__ == "__main__":

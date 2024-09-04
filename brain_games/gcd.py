@@ -2,11 +2,6 @@ import random
 from brain_games.progress_game import progress_game
 
 
-def text():
-    text: str = 'Find the greatest common divisor of given numbers.'
-    return text
-
-
 def gcd() -> str:
     a: int = random.randint(1, 100)
     b: int = random.randint(1, 100)
